@@ -1,8 +1,19 @@
+source ~/antigen.zsh
+
+antigen bundle git
+antigen bundle command-not-found
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+antigen theme agnoster
+
+antigen apply
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/craigpalermo/.oh-my-zsh"
+export ZSH="/Users/cpalermo/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -68,7 +79,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git-auto-fetch yarn npm sudo command-not-found git z zsh-autosuggestions)
+plugins=(git-auto-fetch yarn npm sudo command-not-found git z)
 
 source $ZSH/oh-my-zsh.sh
 
