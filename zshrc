@@ -4,6 +4,7 @@ antigen bundle git
 antigen bundle command-not-found
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle lukechilds/zsh-nvm
 
 antigen theme agnoster
 
@@ -114,3 +115,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # Hide user@host in agnoster theme
 DEFAULT_USER="$USERNAME"
+
+# Ignore warning about insecure directories
+ZSH_DISABLE_COMPFIX=true
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
